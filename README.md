@@ -30,9 +30,10 @@ Vendor Husky models/meshes from `clearpath_gz` are referenced at runtime and **n
 
 ```bash
 # Create workspace
-mkdir -p ~/agri_spiral_ws/src
-cd ~/agri_spiral_ws/src
+mkdir -p ~/agri_linear_ws/src
+cd ~/agri_linear_ws/src
 ```
+
 
 # Clone Clearpath repos (Humble)
 git clone https://github.com/clearpathrobotics/clearpath_common.git    -b humble
@@ -41,11 +42,14 @@ git clone https://github.com/clearpathrobotics/clearpath_msgs.git      -b humble
 git clone https://github.com/clearpathrobotics/clearpath_simulator.git -b humble
 
 # Install deps & build
-cd ~/agri_spiral_ws
+cd ~/agri_linear_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
-echo "source ~/agri_spiral_ws/install/setup.bash" >> ~/.bashrc
+echo "source ~/agri_linear_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Let Ignition (Fortress) find Clearpath assets
 export IGN_GAZEBO_RESOURCE_PATH="$IGN_GAZEBO_RESOURCE_PATH:$(ros2 pkg prefix clearpath_gz)/share"
+
+
+
