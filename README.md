@@ -16,8 +16,7 @@ Vendor-provided Husky models and meshes from `clearpath_gz` are referenced at ru
 
 </p>
 
-*Left:* Ignition Gazebo linear-field world with crop rows and Husky robot.  
-*Right:* MPC trajectory tracking (color = lateral error in meters).
+*image:* Ignition Gazebo linear-field world with crop rows and Husky robot.  
 
 ---
 
