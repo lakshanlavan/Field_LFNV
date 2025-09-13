@@ -4,11 +4,20 @@
 ---
 
 ## Overview
-**Field_LFNV** implements a complete **linear field navigation pipeline** for the Clearpath Husky A200.  
-It combines **crop-path perception**, **reference-path generation**, **nonlinear MPC trajectory tracking**, and a **finite-state row manager** to demonstrate robust autonomous navigation in structured agricultural fields.
+**Field_LFNV** implements a complete **linear-field navigation pipeline** for the Clearpath Husky A200.  
+It integrates **crop-path perception**, **reference-path generation**, **nonlinear MPC trajectory tracking**,  
+and a **finite-state row manager** to demonstrate robust autonomous navigation in structured agricultural fields.
 
 This repository contains **only custom simulation assets and ROS 2 nodes**.  
 Vendor-provided Husky models and meshes from `clearpath_gz` are referenced at runtime and **not re-distributed**.
+
+<p align="center">
+  <img src="assets/field_layout.png" alt="Linear field Ignition world" width="48%"/>
+  <img src="assets/navigation_error_map.png" alt="Trajectory vs reference error map" width="48%"/>
+</p>
+
+*Left:* Ignition Gazebo linear-field world with crop rows and Husky robot.  
+*Right:* MPC trajectory tracking (color = lateral error in meters).
 
 ---
 
