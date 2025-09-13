@@ -1,0 +1,40 @@
+<package format="3">
+  <name>husky_navigation</name>
+  <version>0.0.0</version>
+  <description>Husky navigation package for autonomous movement and image capture</description>
+  <maintainer email="lasi@todo.todo">lasi</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>gz-msgs10</depend>
+  <depend>ament_index_python</depend>
+  <depend>std_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+  
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-pandas</exec_depend>
+  <exec_depend>python3-scipy</exec_depend>
+  <exec_depend>tf-transformations</exec_depend>
+  <exec_depend>python3-matplotlib</exec_depend>
+  <exec_depend>python3-torch</exec_depend>
+  <exec_depend>python3-torchvision</exec_depend>
+  <exec_depend>python3-ipopt</exec_depend>
+  <exec_depend>py-trees</exec_depend>
+  <exec_depend>py-trees-ros</exec_depend>
+  <exec_depend>py-trees-ros-interfaces</exec_depend>
+  <exec_depend>py-trees-ros-tutorials</exec_depend>
+  <exec_depend>py-trees-ros-viewer</exec_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>     

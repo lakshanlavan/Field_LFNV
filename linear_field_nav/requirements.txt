@@ -1,0 +1,8 @@
+torch
+torchvision
+opencv-python
+numpy
+scipy
+casadi==3.7.0
+matplotlib
+Pillow
