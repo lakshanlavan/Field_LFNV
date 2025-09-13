@@ -1,7 +1,17 @@
-# Field_LFNV — Linear Field Navigation (ROS 2 Humble + Ignition)
+# Field_LFNV — Linear Field Navigation for Agricultural Robotics  
+*ROS 2 Humble · Ignition Gazebo Fortress · Clearpath Husky*
 
-Clearpath Husky linear field navigation: crop-path prediction, reference-path building,
-MPC trajectory tracking, and row-manager FSM.
+---
+
+## Overview
+**Field_LFNV** implements a complete **linear field navigation pipeline** for the Clearpath Husky A200.  
+It combines **crop-path perception**, **reference-path generation**, **nonlinear MPC trajectory tracking**, and a **finite-state row manager** to demonstrate robust autonomous navigation in structured agricultural fields.
+
+This repository contains **only custom simulation assets and ROS 2 nodes**.  
+Vendor-provided Husky models and meshes from `clearpath_gz` are referenced at runtime and **not re-distributed**.
+
+---
+
 
 ## Requires
 - ROS 2 **Humble** (source): `source /opt/ros/humble/setup.bash`
