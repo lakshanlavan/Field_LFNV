@@ -1,0 +1,20 @@
+material FieldGroundPlane/Image
+{
+    technique
+    {
+        pass
+        {
+            ambient 1 1 1 1          // White color for ambient light
+            diffuse 1 1 1 1          // White color for diffuse reflection
+            specular 0.03 0.03 0.03 1 0.5 // Specular color and shininess
+            emissive 0 0 0 0         // No emissive light
+            texture_unit
+            {
+                texture model://field_ground_plane/materials/textures/field_ground_1.png  // Correct texture path
+                scale 0.1 0.1  // Adjust scale for better visibility
+                filtering trilinear
+            }
+        }
+    }
+}
+
