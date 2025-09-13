@@ -51,5 +51,20 @@ source ~/.bashrc
 # Let Ignition (Fortress) find Clearpath assets
 export IGN_GAZEBO_RESOURCE_PATH="$IGN_GAZEBO_RESOURCE_PATH:$(ros2 pkg prefix clearpath_gz)/share"
 
+## License – Polyform Noncommercial 1.0.0
+
+**Permissions**
+
+- You may use this software for noncommercial purposes, such as research, personal projects, or teaching.
+
+**Conditions**
+
+- You must include attribution to the original author.
+- You may not use this software for commercial purposes.
+
+**Limitations**
+
+- No liability.
+- No warranty.
 
 
